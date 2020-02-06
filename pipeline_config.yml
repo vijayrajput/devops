@@ -45,11 +45,11 @@ stages:
 #    nonErpDestinations:
 #      - 'myCustomDestination'
 
-#  productionDeployment:
-#    cfTargets:
-#      - org: 'myOrg'
-#        space: 'mySpace'
-#        apiEndpoint: 'https://'
+  productionDeployment:
+    cfTargets:
+      - org: 'dbs-emea-north-cfdev2'
+        space: 'dev'
+        apiEndpoint: 'https://api.cf.eu10.hana.ondemand.com'
 #        appName: 'myAppName'
 #        manifest: 'manifest.yml'
-#        credentialsId: 'myDeploymentCredentialsId'
+        credentialsId: 'cf-credential'
